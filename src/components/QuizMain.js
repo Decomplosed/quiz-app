@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Question from './Question/Question'
+
 import './QuizMain.css'
 
 export class QuizMain extends Component {
