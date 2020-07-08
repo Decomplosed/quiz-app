@@ -39,9 +39,11 @@ export class QuizMain extends Component {
   }
 
   render() {
+    const { questions, step } = this.state
+
     return (
       <div className='Content'>
-        <Question question={this.state.questions[step]} />
+        <Question question={questions[step]} />
       </div>
     )
   }
