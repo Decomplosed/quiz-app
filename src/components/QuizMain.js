@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Question from './Question/Question'
+import Answer from './Answer/Answer'
 
 import './QuizMain.css'
 
