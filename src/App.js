@@ -1,4 +1,6 @@
 import React from 'react'
+import QuizMain from './components/QuizMain'
+
 import './App.css'
 
 function App() {
