@@ -2,11 +2,11 @@ import React from 'react'
 import './Answer.css'
 
 const Answer = (props) => {
-  return (
-    <ul className='Answers'>
-      <li>Answer</li>
-    </ul>
-  )
+  let answers = Object.keys(props.answers).map((answer, i) => (
+    <li key={answer}>{props.answers[answer]}</li>
+  ))
+
+  return <ul className='Answers'>{answers}</ul>
 }
 
 export default Answer
