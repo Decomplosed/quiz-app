@@ -28,8 +28,12 @@ export class QuizMain extends Component {
     correctAnswers: {
       1: '2',
       2: '1',
-      3: '1'
-  },
+      3: '1',
+    },
+    correctAnswer: 0,
+    clickedAnswer: 0,
+    step: 1,
+    score: 0,
   }
 
   render() {
