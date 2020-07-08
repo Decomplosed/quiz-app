@@ -25,6 +25,11 @@ export class QuizMain extends Component {
         3: 'Saturn',
       },
     },
+    correctAnswers: {
+      1: '2',
+      2: '1',
+      3: '1'
+  },
   }
 
   render() {
