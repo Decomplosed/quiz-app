@@ -1,8 +1,8 @@
 import React from 'react'
 import './Question.css'
 
-const Question = () => {
-  return <h1>Question</h1>
+const Question = (props) => {
+  return <h1>{props.quesiton}</h1>
 }
 
 export default Question
