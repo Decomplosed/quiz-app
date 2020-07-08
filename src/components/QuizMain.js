@@ -8,6 +8,23 @@ export class QuizMain extends Component {
       2: 'What is the capital of Greece?',
       3: 'What planet gave birth to Superman?',
     },
+    answers: {
+      1: {
+        1: 'Chicago',
+        2: 'New Orleans',
+        3: 'New York',
+      },
+      2: {
+        1: 'Athens',
+        2: 'Patras',
+        3: 'Kalamata',
+      },
+      3: {
+        1: 'Krypton',
+        2: 'Mars',
+        3: 'Saturn',
+      },
+    },
   }
 
   render() {
