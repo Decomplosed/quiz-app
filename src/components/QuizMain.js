@@ -40,12 +40,12 @@ export class QuizMain extends Component {
   }
 
   render() {
-    const { questions, step } = this.state
+    const { questions, step, answers } = this.state
 
     return (
       <div className='Content'>
         <Question question={questions[step]} />
-        <Answer />
+        <Answer answers={answers[step]} step={step} />
       </div>
     )
   }
