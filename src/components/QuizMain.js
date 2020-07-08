@@ -45,6 +45,7 @@ export class QuizMain extends Component {
     return (
       <div className='Content'>
         <Question question={questions[step]} />
+        <Answer />
       </div>
     )
   }
