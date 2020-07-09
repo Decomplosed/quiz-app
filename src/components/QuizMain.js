@@ -71,27 +71,31 @@ export class QuizMain extends Component {
 
     return (
       <div className='Content'>
-        <Question question={questions[step]} />
-        <Answer
-          answers={answers[step]}
-          step={step}
-          checkAnswer={this.checkAnswer}
-          correctAnswer={correctAnswer}
-          clickedAnswer={clickedAnswer}
-        />
-        <button
-          className='NextStep'
-          disabled={
-            clickedAnswer && Object.keys(questions).length >= step
-              ? false
-              : true
-          }
-          onClick={() => {
-            this.nextStep(step)
-          }}
-        >
-          Next
-        </button>
+        {step <= Object.keys(questions).length ? (
+          <>
+            <Question question={questions[step]} />
+            <Answer
+              answers={answers[step]}
+              step={step}
+              checkAnswer={this.checkAnswer}
+              correctAnswer={correctAnswer}
+              clickedAnswer={clickedAnswer}
+            />
+            <button
+              className='NextStep'
+              disabled={
+                clickedAnswer && Object.keys(questions).length >= step
+                  ? false
+                  : true
+              }
+              onClick={() => {
+                this.nextStep(step)
+              }}
+            >
+              Next
+            </button>
+          </>
+        ) : ()}
       </div>
     )
   }
