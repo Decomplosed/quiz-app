@@ -1,7 +1,7 @@
 import React from 'react'
 import './Answer.css'
 
-const Answer = ({ answers, checkAnswer }) => {
+const Answer = ({ answers, checkAnswer, correctAnswer }) => {
   let answersMarkup = Object.keys(answers).map((answer, i) => (
     <li key={answer} onClick={() => checkAnswer(answer)}>
       {answers[answer]}
