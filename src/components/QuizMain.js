@@ -67,6 +67,7 @@ export class QuizMain extends Component {
       answers,
       correctAnswer,
       clickedAnswer,
+      score,
     } = this.state
 
     return (
