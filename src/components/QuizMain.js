@@ -75,6 +75,7 @@ export class QuizMain extends Component {
           correctAnswer={correctAnswer}
           clickedAnswer={clickedAnswer}
         />
+        <button className='NextStep'>Next</button>
       </div>
     )
   }
