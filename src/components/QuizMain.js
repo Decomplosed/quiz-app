@@ -49,7 +49,11 @@ export class QuizMain extends Component {
     return (
       <div className='Content'>
         <Question question={questions[step]} />
-        <Answer answers={answers[step]} step={step} />
+        <Answer
+          answers={answers[step]}
+          step={step}
+          checkAnswer={this.checkAnswer}
+        />
       </div>
     )
   }
