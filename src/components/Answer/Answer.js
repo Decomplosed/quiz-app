@@ -19,9 +19,11 @@ const Answer = ({ answers, checkAnswer, correctAnswer, clickedAnswer }) => {
   ))
 
   return (
-    <ul disabled={clickedAnswer ? true : false} className='Answers'>
-      {answersMarkup}
-    </ul>
+    <>
+      <ul disabled={clickedAnswer ? true : false} className='Answers'>
+        {answersMarkup}
+      </ul>
+    </>
   )
 }
 
