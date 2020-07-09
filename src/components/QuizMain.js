@@ -102,6 +102,7 @@ export class QuizMain extends Component {
             <p>
               Your score is: {score} of {Object.keys(questions).length}
             </p>
+            <p>Thank you!</p>
           </div>
         )}
       </div>
