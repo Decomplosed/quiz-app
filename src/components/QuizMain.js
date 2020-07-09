@@ -56,6 +56,8 @@ export class QuizMain extends Component {
     }
   }
 
+  nextStep = (step) => {}
+
   render() {
     const {
       questions,
