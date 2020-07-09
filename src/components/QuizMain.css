@@ -16,6 +16,10 @@
   display: none
 }
 
+.finalPage {
+  text-align: center;
+}
+
 .finalPage h1 {
   text-align: center;
   margin: 15px 0;
