@@ -11,3 +11,7 @@
 .NextStep:hover {
   background-color: #02928d;
 }
+
+.NextStep[disabled] {
+  display: none
+}
