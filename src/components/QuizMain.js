@@ -57,7 +57,13 @@ export class QuizMain extends Component {
   }
 
   render() {
-    const { questions, step, answers } = this.state
+    const {
+      questions,
+      step,
+      answers,
+      correctAnswer,
+      clickedAnswer,
+    } = this.state
 
     return (
       <div className='Content'>
