@@ -48,6 +48,11 @@ export class QuizMain extends Component {
         correctAnswer: correctAnswers[step],
         clickedAnswer: answer,
       })
+    } else {
+      this.setState({
+        correctAnswer: 0,
+        clickedAnswer: answer,
+      })
     }
   }
 
