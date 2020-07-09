@@ -56,7 +56,9 @@ export class QuizMain extends Component {
     }
   }
 
-  nextStep = (step) => {}
+  nextStep = (step) => {
+    this.setState({ step: step + 1, correctAnswer: 0, clickedAnswer: 0 })
+  }
 
   render() {
     const {
