@@ -3,3 +3,10 @@
   margin: 0;
   padding: 0;
 }
+
+.Answers li {
+  padding: 10px;
+  border-left: 5px solid #FF3B3B;
+  background-color: #f0f0f0;
+  margin: 0 0 10px;
+}
