@@ -39,6 +39,8 @@ export class QuizMain extends Component {
     score: 0,
   }
 
+  checkAnswer = () => {}
+
   render() {
     const { questions, step, answers } = this.state
 
