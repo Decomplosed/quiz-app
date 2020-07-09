@@ -96,7 +96,14 @@ export class QuizMain extends Component {
               Next
             </button>
           </>
-        ) : ()}
+        ) : (
+          <div className='finalPage'>
+            <h1>You have completed the Quiz!</h1>
+            <p>
+              Your score is: {score} of {Object.keys(questions).length}
+            </p>
+          </div>
+        )}
       </div>
     )
   }
