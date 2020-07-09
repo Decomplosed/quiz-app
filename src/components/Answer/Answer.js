@@ -23,6 +23,13 @@ const Answer = ({ answers, checkAnswer, correctAnswer, clickedAnswer }) => {
       <ul disabled={clickedAnswer ? true : false} className='Answers'>
         {answersMarkup}
       </ul>
+      <div>
+        {correctAnswer
+          ? 'Correct answer!'
+          : clickedAnswer
+          ? 'Incorrect answer!'
+          : ''}
+      </div>
     </>
   )
 }
