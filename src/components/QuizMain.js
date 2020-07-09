@@ -86,6 +86,9 @@ export class QuizMain extends Component {
               ? false
               : true
           }
+          onClick={() => {
+            this.nextStep(step)
+          }}
         >
           Next
         </button>
