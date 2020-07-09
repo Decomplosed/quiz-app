@@ -18,7 +18,11 @@ const Answer = ({ answers, checkAnswer, correctAnswer, clickedAnswer }) => {
     </li>
   ))
 
-  return <ul className='Answers'>{answersMarkup}</ul>
+  return (
+    <ul disabled={clickedAnswer ? true : false} className='Answers'>
+      {answersMarkup}
+    </ul>
+  )
 }
 
 export default Answer
