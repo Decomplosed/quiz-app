@@ -22,3 +22,10 @@
   border-left: 5px solid #0f6300;
   color: #fff;
 }
+
+.Answers .incorrect,
+.Answers .incorrect:hover {
+  background-color: #ec0000;
+  border-left: 5px solid #FF3B3B;
+  color: #fff;
+}
