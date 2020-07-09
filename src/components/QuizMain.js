@@ -72,6 +72,8 @@ export class QuizMain extends Component {
           answers={answers[step]}
           step={step}
           checkAnswer={this.checkAnswer}
+          correctAnswer={correctAnswer}
+          clickedAnswer={clickedAnswer}
         />
       </div>
     )
