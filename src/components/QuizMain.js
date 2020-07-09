@@ -40,7 +40,11 @@ export class QuizMain extends Component {
   }
 
   checkAnswer = (answer) => {
-    const { correctAnswer, step, score } = this.state
+    const { correctAnswers, step, score } = this.state
+
+    if (answer === correctAnswers[step]) {
+      this.setState({ score: score + 1 })
+    }
   }
 
   render() {
