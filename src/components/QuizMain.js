@@ -43,7 +43,11 @@ export class QuizMain extends Component {
     const { correctAnswers, step, score } = this.state
 
     if (answer === correctAnswers[step]) {
-      this.setState({ score: score + 1 })
+      this.setState({
+        score: score + 1,
+        correctAnswer: correctAnswers[step],
+        clickedAnswer: answer,
+      })
     }
   }
 
