@@ -75,7 +75,16 @@ export class QuizMain extends Component {
           correctAnswer={correctAnswer}
           clickedAnswer={clickedAnswer}
         />
-        <button className='NextStep'>Next</button>
+        <button
+          className='NextStep'
+          disabled={
+            clickedAnswer && Object.keys(questions).length >= step
+              ? false
+              : true
+          }
+        >
+          Next
+        </button>
       </div>
     )
   }
